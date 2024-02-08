@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>GOVERNO FEDERAL</h1>
+    <h2>Sistema de Imigração</h2>
+    Informe seu pais de origem: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="valida()">
+
+    <div id="res"></div>
+
+    <script>
+
+        function valida() {
+            var p = document.getElementById('txtp')
+            var res = document.getElementById('res')
+            var pais = String(p.value)
+            res.innerHTML = `<p>Você nasceu em <strong>${pais}</strong></p>`
+            if (pais == 'Brasil') {
+                res.innerHTML += `Você é <strong>Brasileiro</strong>!`
+            } else {
+                res.innerHTML += `Você é <strong>Estrangeiro</strong>!`
+            }
+        }
+        
+    </script>
+</body>
+</html>
