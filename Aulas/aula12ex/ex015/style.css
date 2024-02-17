@@ -19,10 +19,6 @@ section {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.336);
 }
 
-#anoUser, #sexUser, #botao, #res, #img{
-    padding: 10px;
-}
-
 #res, #img {
     text-align: center;
 }
